@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen;
+  @apply text-zinc-900;
+  @apply dark:bg-zinc-700 dark:text-zinc-100;
+  @apply dark:selection:bg-primary-900 dark:selection:text-primary-500;
+  /* @apply dark:bg-gray-800 dark:text-white; */
+}
+
+#root {
+  @apply min-h-screen;
+  @apply overflow-x-hidden;
+}
