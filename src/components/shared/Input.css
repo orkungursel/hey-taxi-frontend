@@ -1,0 +1,40 @@
+.Input {
+  @apply transition;
+  @apply border-zinc-300;
+  @apply group-hover:border-black;
+  @apply group-hover:text-zinc-900;
+  @apply group-hover:placeholder:text-zinc-900;
+  @apply group-focus-within:border-zinc-900;
+  @apply group-focus-within:text-zinc-900;
+  @apply group-focus-within:placeholder:text-zinc-900;
+  @apply dark:bg-zinc-900;
+  @apply dark:border-zinc-400;
+  @apply dark:group-hover:border-zinc-100;
+  @apply dark:group-hover:text-zinc-100;
+  @apply dark:group-hover:placeholder:text-zinc-100;
+  @apply dark:group-focus-within:border-zinc-100;
+  @apply dark:group-focus-within:text-zinc-100;
+  @apply dark:group-focus-within:placeholder:text-zinc-100;
+}
+
+.Input::placeholder {
+  @apply transition;
+}
+
+.Input:-webkit-autofill,
+.Input:-webkit-autofill:hover,
+.Input:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .Input:-webkit-autofill,
+  .Input:-webkit-autofill:hover,
+  .Input:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px #232323 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
