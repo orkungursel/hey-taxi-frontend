@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import { HistoryRouter as Router } from "redux-first-history/rr6";
 
-import { NotificationCount } from "../components/shared/NotificationCount";
+import { NotificationWrapper } from "../features/notification-wrapper";
 import { history, store } from "../lib/store";
 import HomePage from "../pages/home/HomePage";
 import { RoutePath } from "./routes";
@@ -26,7 +26,7 @@ function App() {
     <Router history={history}>
       <React.Suspense fallback={<p>Loading...</p>}>
         <AppRoutes />
-        <NotificationCount />
+        <NotificationWrapper />
       </React.Suspense>
     </Router>
   );
