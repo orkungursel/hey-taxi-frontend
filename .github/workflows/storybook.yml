@@ -1,7 +1,7 @@
 name: Build and Deploy
 on:
   push:
-    paths: ["stories/**", "src/components/**"]
+    paths: ["./.storybook/**", "stories/**", "src/components/**"]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
