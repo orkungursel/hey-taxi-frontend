@@ -1,6 +1,6 @@
 # Hey Taxi Frontend [WIP]
 
-![hey-taxi-gh-1 (1)](https://user-images.githubusercontent.com/288159/168309289-2be8e084-8263-413a-82c7-99fe2b17baef.png)
+![hey-taxi-gh-1](https://user-images.githubusercontent.com/288159/168313473-dcd0e484-d22d-404e-abf4-45d4ccb70c35.png)
 
 `Live Preview:` (*Not available yet*)
 `Storybook:` https://orkungursel.github.io/hey-taxi-frontend/
