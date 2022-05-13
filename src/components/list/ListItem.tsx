@@ -63,15 +63,16 @@ export const ListItem: FC<ListItemBaseProps & ListItemProps> = (props) => {
 const ImageSlot: FC<ListItemImageSlotProps> = (props) => {
   return (
     <>
-      props.imageSlot ?? (props.imageSrc ? (
-      <div className={itemImageWrapperClass}>
-        <img
-          src={props.imageSrc}
-          alt={props.imageAlt}
-          className={itemImageClass}
-        />
-      </div>
-      ) : null)
+      {props.imageSlot ??
+        (props.imageSrc ? (
+          <div className={itemImageWrapperClass}>
+            <img
+              src={props.imageSrc}
+              alt={props.imageAlt}
+              className={itemImageClass}
+            />
+          </div>
+        ) : null)}
     </>
   );
 };
