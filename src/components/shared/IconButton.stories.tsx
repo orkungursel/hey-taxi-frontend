@@ -45,7 +45,7 @@ const Template: ComponentStory<typeof IconButton> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  children: <CheckIcon />,
+  children: "CheckIcon",
 };
 
 export const Loading = Template.bind({});
